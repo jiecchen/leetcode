@@ -28,22 +28,8 @@ class Solution:
         
 
 
-        # now change the direction in the list
 
 
 
-def construct(lst):
-    lst = [ListNode(x) for x in lst]
-    for i in xrange(1, len(lst)):
-        lst[i - 1].next = lst[i]
-    return lst[0]
 
-def print_lst(head):
-    while head != None:
-        print head.val
-        head = head.next
 
-sl = Solution()
-head = construct([1, 2, 3, 4, 5])
-new_head = sl.swapPairs(head)
-print_lst(new_head)
